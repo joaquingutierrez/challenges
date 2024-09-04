@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.signin-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+.signin-bg::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.signin-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.netflix-logo {
+    overflow: auto;
+}
+
+.netflix-logo svg {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    display: block;
+    margin: 24px 32px;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-form {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    padding: 48px 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.signin-form h1 {
+    font-size: 2rem;
+    margin-bottom: 28px;
+}
+
+.signin-form input {
+    line-height: 1.5;
+    width: 100%;
+    padding: 1.5rem 1rem 0.5rem;
+}
